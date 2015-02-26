@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{% if page.title %} {{ page.title }} | {% endif %} Brittni's Blog</title>
+		<link rel="stylesheet" href="/css/reset.css" />
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/stickyFooter.css" />
+		<link rel="stylesheet" href="/css/lightbox.css" />
+		<link rel="stylesheet" href="/css/font.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<script src="/js/jquery-2.1.3.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/lightbox.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default">
+  				<div class="container-fluid">
+    				<div class="navbar-header">
+      					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse">
+        					<span class="sr-only">Toggle navigation</span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+      					</button>
+    				</div>
+
+   				<div class="collapse navbar-collapse" id="nav-collapse">
+      				<ul class="nav nav-justified">
+						<li><a href="/" class="menuLink" id="home">Home</a></li>
+						<li><a href="/about" class="menuLink" id="about">About</a></li>
+						<li><a href="/skills" class="menuLink" id="skills">Skills</a></li>
+						<li><img src="/img/logo.png" alt="Brittni Ericson - Imaginative & inspired creative design solutions" style="height: 250px; margin-left:auto;margin-right:auto;display:block" id="middleImg"></li>
+						<li><a href="/interiorDesign" class="menuLink" id="portfolio">Portfolio</a></li>
+						<li><a href="/contact" class="menuLink" id="contact">Contact</a></li>
+						<li><a href="/blog" class="menuLink" id="blog">Blog</a></li>
+					</ul>
+    			</div>
+  			</div>
+		</nav>
+
+		{{ content }}
+		</div>
+
+
+		<footer class="footer">
+        	<p class="text-muted">&#169;<span class="pretty">Brittni Ericson</span> <span class="felix">2015 | DEVELOPED BY</span> <span class="pretty">Gregory Ericson</span></p>
+    	</footer>
+    <script>
+		$(document).ready(function(){
+			$({{page.navName}}).addClass("navSelected");
+		});
+	</script>
+	</body>
+</html>

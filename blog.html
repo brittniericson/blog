@@ -1,0 +1,16 @@
+---
+layout: blog
+---
+
+{% for post in site.posts %}
+<div class="row">
+  <div class="col-md-12" style="margin-bottom: 15px">
+  	<h4 class="postDate">{{ post.date | date: "%-m.%-d.%Y" }}</h4>
+    <h2 class="postTitle">{{ post.title }}</h2>
+    <div class="postContent">
+    	{{ post.excerpt }}
+      <a href="{{ post.url }}">Read Post</a>
+    </div>
+  </div>
+</div>
+{% endfor %}

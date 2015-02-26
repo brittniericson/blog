@@ -1,0 +1,126 @@
+@media (max-width: 766px) {
+	#middleImg{
+		display:none !important;
+	}
+	
+	.sidebar{
+		display:none !important;
+	}
+
+	#homeImg{
+		max-width: 100% !important;
+	}
+}
+
+#homeImg{
+	width: 50%;
+	margin-left:auto;
+	margin-right:auto;
+	display:block
+}
+
+.navbar{
+	border: none;
+}
+
+.container-fluid{
+		background-color: white;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color: #faf5d4;
+}
+
+#nav-collapse li a{
+	font-family: felix;
+	color: black;
+	font-size: 1.1em;
+}
+
+#nav-collapse li a:hover{
+	background-color: white;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#nav-collapse li{
+	vertical-align: middle;
+}
+
+.navSelected{
+	background-color: white;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.categories img{ 
+   margin-left :auto;
+   margin-right :auto;
+   margin-bottom: 5px;
+   width: 100%; 
+}
+
+#categories-lbl{
+	text-align: center;
+	font-family: petit;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+   	margin-top: 30px;
+}
+
+.indexPageFrame{
+	padding:15px;
+}
+
+.indexPageFrameInner{
+	border-style:double;
+	border-color: #faf5d4;
+	border-width: 10px;
+	height: 500px;
+}
+
+.pretty{
+	font-family: petit;
+}
+
+.felix{
+	font-family: felix;
+}
+
+#post-body{
+	margin-bottom: 60px;
+}
+
+#portfolioNav li a{
+	font-family: felix;
+	color: black;
+}
+
+#portfolioNav li a:hover{
+	font-family: petit;
+	color: 00070d;
+}
+
+#portfolioNav li a:hover{
+	background-color: white;
+}
+
+.postDate{
+	font-family: felix;
+	font-size: 1em;
+}
+
+.postTitle{
+	font-family: petit;
+	font-size: 1.5em;
+}
+
+.postContent{
+	font-size: .9em;
+}
+
+.imageCenter{
+	margin-left:auto;
+	margin-right:auto;
+	display:block
+}
