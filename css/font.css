@@ -1,0 +1,13 @@
+---
+# comment for jekyll
+---
+
+@font-face {
+	font-family: felix;
+	src: url('{{site.baseurl}}/fonts/Felixti.TTF');
+}
+
+@font-face {
+	font-family: petit;
+	src: url('{{site.baseurl}}/fonts/PetitFormalScript-Regular.ttf');
+}

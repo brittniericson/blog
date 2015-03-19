@@ -1,0 +1,83 @@
+---
+layout: blog
+comments: true
+navName: blog
+---
+<div class="post">
+
+  <header class="postHeader">
+    <h2 style="font-family: felix; font-size: 1em">{{ page.date | date: "%-m.%-d.%Y" }}</h4>
+    <h3 style = "font-family: petit; font-size: 1.2em;margin:3px">{{ page.title }}</h3>
+    {% if page.title %}
+    <h3 style = "font-family: petit; font-size: 1.2em;margin:3px">{{ page.subtitle }}</h3>
+    {% endif %}
+  </header>
+
+
+  <article class="postContent caslon" id="post-body">
+    {{ content }}
+  </article>
+
+  <div class="fb-share-button" data-href="{{site.baseurl}}{{page.url}}" data-layout="button" data-colorscheme="light"></div>
+
+  {% if page.category.size > 0 %}
+  <p style="font-family: petit; font-size: 1em; margin-bottom:0px">Category: 
+    {% for relatedPost in page.category %}
+    {% assign loopindex = forloop.index} %}
+      {% if page.category[forloop.index0] == "cakes" %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}/{{ page.category[forloop.index0] }}">Cakes & Cupcakes</a>
+      {% elsif page.category[forloop.index0] == "events" %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}/{{ page.category[forloop.index0] }}">Parties & Events</a>
+      {% elsif page.category[forloop.index0] == "graph" %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}/{{ page.category[forloop.index0] }}">Graphics</a>
+      {% elsif page.category[forloop.index0] == "interior" %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}/{{ page.category[forloop.index0] }}">Interior Design</a>
+      {% elsif page.category[forloop.index0] == "photo" %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}/{{ page.category[forloop.index0] }}">Photography</a>
+      {% elsif page.category[forloop.index0] == "holidays" %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}/{{ page.category[forloop.index0] }}">Holidays</a>
+      {% elsif page.category[forloop.index0] == "organization" %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}/{{ page.category[forloop.index0] }}">Organization</a>
+      {% elsif page.category[forloop.index0] == "holidays" %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}/{{ page.category[forloop.index0] }}">Holidays</a>
+      {% elsif page.category[forloop.index0] == "crafts" %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}/{{ page.category[forloop.index0] }}">Crafts</a>
+      {% elsif page.category[forloop.index0] == "weddings" %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}/{{ page.category[forloop.index0] }}">Weddings</a>
+      {% endif %}
+      {% if forloop.last %}
+      {% else %}
+      ,
+      {% endif %}
+      {% endfor %}
+  </p>
+
+  {% endif %}
+  
+  {% if page.relatedPost.size > 0 %}
+  <p style="font-family: petit; font-size: 1em; margin-top:0px">Related Posts: 
+
+    {% for relatedPost in page.relatedPost %}
+    {% assign loopindex = forloop.index} %}
+        <a style="font-family: caslon;" href="{{ site.baseurl }}{{ page.relatedPostLink[forloop.index0] }}">{{ page.relatedPost[forloop.index0] }}</a>
+    {% endfor %}
+  </p>
+  {% endif %}
+</div>
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'brittnisblog'; // required: replace example with your forum shortname
+        var disqus_identifier = "{{ site.disqusid }}{{ page.url | replace:'index.html','' }}";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script type="text/javascript" async defer  data-pin-color="white" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
+

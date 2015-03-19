@@ -1,0 +1,6 @@
+name: "Brit Blog"
+description: "Brittnis Blog"
+
+markdown: redcarpet
+permalink: pretty
+

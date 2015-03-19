@@ -1,0 +1,18 @@
+---
+layout: blog
+---
+{% for post in site.categories.organization limit: 15 %}
+<div class="row">
+  <div class="col-md-12" style="margin-bottom: 15px">
+  	<h4 class="postDate" style="margin-bottom: 5px">{{ post.date | date: "%-m.%-d.%Y" }}</h4>
+    <h2 class="postTitle" style="margin-top: 5px">{{ post.title }}</h2>
+    {% if post.subtitle %}
+    	<h2 class="postTitle" style="margin-top: 5px">{{ post.subtitle }}</h2>
+    {% endif %}
+    <div class="postContent caslon">
+    	{{ post.excerpt }}
+      <a href="{{site.baseurl}}{{ post.url }}">Read Post</a>
+    </div>
+  </div>
+</div>
+{% endfor %}

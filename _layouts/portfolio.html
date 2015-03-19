@@ -1,0 +1,41 @@
+---
+layout: default
+navName: portfolio
+---
+<div class="row">
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked" id="portfolioNav">
+			<li role="presentation"><a href="{{site.baseurl}}/interiorDesign/index.html" {% if page.currentTab == "interiorDesign" %} style="font-family: petit" {%endif%}>Interior Design</a></li>
+      <li role="presentation"><a href="{{site.baseurl}}/drafting/index.html" {% if page.currentTab == "drafting" %} style="font-family: petit" {%endif%}>Drafting</a></li>
+			<li role="presentation"><a href="{{site.baseurl}}/graphics/index.html" {% if page.currentTab == "graphics" %} style="font-family: petit" {%endif%}>Graphics</a></li>
+			<li role="presentation"><a href="{{site.baseurl}}/photography/index.html" {% if page.currentTab == "photography" %} style="font-family: petit" {%endif%}>Photography</a></li>	
+      <li role="presentation"><a href="{{site.baseurl}}/cakes_cupcakes/index.html" {% if page.currentTab == "cakes_cupcakes" %} style="font-family: petit" {%endif%}>Cakes & Cupcakes</a></li> 
+		</ul>
+	</div>
+	<div class="col-md-9">
+	{% for image in page.image %}
+  {% assign loopindex = forloop.index | modulo: 3 %}
+  {% if loopindex == 1 %}
+    <div class="row">
+		<div class="col-md-4" style="padding:20px">
+      	<a href="{{site.baseurl}}{{ page.image[forloop.index0] }}" data-lightbox="{{ page.image-alt[forloop.index0] }}">
+      		<img src="{{site.baseurl}}{{ page.image[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}" style="max-width: 100%">
+      	</a>
+      </div>
+  {% elsif loopindex == 2 %}
+  		<div class="col-md-4" style="padding:20px">
+      	<a href="{{site.baseurl}}{{ page.image[forloop.index0] }}" data-lightbox="{{ page.image-alt[forloop.index0] }}">
+      		<img src="{{site.baseurl}}{{ page.image[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}" style="max-width: 100%">
+      	</a>
+      </div>
+  {% else %}
+    <div class="col-md-4" style="padding:20px">
+        <a href="{{site.baseurl}}{{ page.image[forloop.index0] }}" data-lightbox="{{ page.image-alt[forloop.index0] }}">
+          <img src="{{site.baseurl}}{{ page.image[forloop.index0] }}" alt="{{ page.image-alt[forloop.index0] }}" style="max-width: 100%">
+        </a>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+	</div>
+</div>
