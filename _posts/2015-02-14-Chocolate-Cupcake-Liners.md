@@ -44,9 +44,7 @@ As soon as the chocolate has set up, remove them from the freezer. *Gently* begi
 Check out the video below for a step-by-step visual. In my next post, I will share with you how I used these liners to make my favorite chocolate cupcakes!
 
 
-<video width="520" height="340" controls class="imageCenter"> 
-  <source src="{{site.baseurl}}/img/chocolatecupcakeliners/Chocolate-Cupcake-Liners-video.mp4" type="video/mp4"> Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" class="imageCenter" src="https://www.youtube.com/embed/QZ3LfGocO2Y" frameborder="0" allowfullscreen></iframe>
 &nbsp;
 
 <img src="{{site.baseurl}}/img/chocolatecupcakeliners/Tips-&-Troubleshooting.jpg" class="imageCenter" style="max-width:80%">

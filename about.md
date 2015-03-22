@@ -4,7 +4,7 @@ navName: about
 ---
 
 <p style="font-family: petit; font-size: 2em; text-align: center"><b>About Me</b></p>
-<div class="caslon">
+<div class="caslon" style="font-size: 1.1em">
 <p>
 I am first and foremost a designer. I love problem solving and I live for the opportunity to think outside of the box. I have an Interior Design degree from Radford University and currently work as a geospatial manager for the Smithsonian Institution in Washington, DC. On the side, I run an in home cupcake business, Ericson Cupcakes, specializing in sugar flowers and edible cupcake decorations.</p>
 
@@ -35,5 +35,5 @@ interested in hiring him to help you with your website or blog, please send an e
 
 
 <a href="https://www.linkedin.com/pub/brittni-ericson/47/934/845">
-    <img src="{{site.baseurl}}/img/About/linkedin.jpg" style="width:100px">
+    <img src="{{site.baseurl}}/img/About/linkedin.jpg" style="width:80px">
 </a>
