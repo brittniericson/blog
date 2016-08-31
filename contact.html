@@ -2,19 +2,25 @@
 layout: default
 navName: contact
 ---
-
-<form accept-charset="UTF-8" action="https://getsimpleform.com/messages?form_api_token=90b75d7d964b6dec44e7c80d866aa40c" method="POST">
-	<div class="form-group">
-		<label for="name" class="pretty">Your Name</label>
-   		<input type="text" name="name" id="name" class="form-control caslon">
-   	</div>
-   	<div class="form-group">
-   		<label for="name" class="pretty">Your Email</label>
-    	<input type="email" name="_replyto" id"=email" class="form-control caslon">
-    </div>
-    <div class="form-group">
-   		<label for="content" class="pretty">Message</label>
-    	<textarea type="text" rows="5" name="message" id="content" class="form-control caslon"></textarea>
-    </div>
-    <button type="submit" class="btn btn-default felix">Submit</button>
-</form> 
+<div class="row">
+  <div class="col-md-9">
+    <form accept-charset="UTF-8" action="https://getsimpleform.com/messages?form_api_token=90b75d7d964b6dec44e7c80d866aa40c" method="POST">
+    	<div class="form-group">
+    		<label for="name" class="pretty">Your Name</label>
+       		<input type="text" name="name" id="name" class="form-control caslon">
+       	</div>
+       	<div class="form-group">
+       		<label for="name" class="pretty">Your Email</label>
+        	<input type="email" name="_replyto" id"=email" class="form-control caslon">
+        </div>
+        <div class="form-group">
+       		<label for="content" class="pretty">Message</label>
+        	<textarea type="text" rows="5" name="message" id="content" class="form-control caslon"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default felix">Submit</button>
+    </form> 
+  </div>
+  <div class="col-md-3 sidebar">
+    <img src="{{site.baseurl}}/img/Sidebar/sidebarphoto.jpg" style="max-width:85%" nopin="nopin" class="imageCenter" id="aboutMeBlogImg">
+  </div>
+</div>
