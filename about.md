@@ -17,17 +17,14 @@ For more information about me, feel free to head over to the blog. I am constant
 <img src="{{site.baseurl}}/img/About/passions.jpg" style="max-width:70%" class="imageCenter">
 
 &nbsp;
-<p style="font-family:petit;font-size: 1.5em; text-align: center"><b>Many thanks</b></p>
+<p style="font-family:petit;font-size: 1.5em; text-align: center"><b>My Goals</b></p>
 
-<p>
-The beautiful watercolor graphics in the sidebar (the social media icons and categories buttons) are 
-from <a href="http://www.angiemakes.com" class="text-muted"><i>www.angiemakes.com</i></a>. She makes some of the most beautiful graphics and I would highly 
-recommend checking out her website!</p>
+<p style="text-align: center">
+Continue working towards becoming a licensed interior designer.</br>
+Earn the LEED AP certification.</br>
+Continuously grow as a designer.
+</p>
 
-<p>
-My entire website was custom made for me by my very talented husband, Greg Ericson. If you are 
-interested in hiring him to help you with your website or blog, please send an email to
-<span class="text-muted">ericsogm@gmail.com</span>.</p>
 </div>
 &nbsp;
 &nbsp;
