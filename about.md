@@ -16,8 +16,8 @@ I am first and foremost a designer. I love problem solving and I live for the op
 <p style="font-family:petit;font-size: 1.5em; text-align: center"><b>My Goals</b></p>
 
 <p style="text-align: center">
-Continue working towards becoming a licensed interior designer.\
-Earn the LEED AP certification.\
+Continue working towards becoming a licensed interior designer.<br />
+Earn the LEED AP certification.<br />
 Continuously grow as a designer.
 </p>
 
