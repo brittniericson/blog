@@ -1,6 +1,6 @@
 name: "Brittni's Portfolio"
 description: "Brittni's Portfolio"
 
-markdown: redcarpet
+markdown: kramdown
 permalink: pretty
 
